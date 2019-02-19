@@ -1,0 +1,102 @@
+<img src="../../assets/Lafa.jpg" alt="lafayette logo" height="100% !important">
+<p><small>version debug</small></p>
+<p>Recherchez votre formation</p>
+
+<div class="container">
+<!--Search bar-->
+  <input #box (key)=0 placeholder="Recherchez une formation..." [(ngModel)]="searchToken"/>
+<!--Recuperation de l'input du user-->
+  <span>Requête entrée : </span> <span>{{box.value}}</span>
+  <hr style="color:blueviolet">
+<!--Checkbox par type et par niveau, logique non implementee-->
+  <div class="form-group">
+      
+      <label class="checkbox-inline">
+          BAC <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative">
+      </label>
+      <label class="checkbox-inline">
+          BAC+2 <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative"> 
+      </label>
+      <label class="checkbox-inline">
+          BAC+3 <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative"> 
+      </label>
+      <label class="checkbox-inline">
+          BAC+4 <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative"> 
+      </label>
+      <label class="checkbox-inline">
+          BAC+5 <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative"> 
+      </label><br>
+
+      <label class="checkbox-inline">
+          BAC <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative">
+      </label>
+      <label class="checkbox-inline">
+          DEUG <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative"> 
+      </label>
+      <label class="checkbox-inline">
+          DUT <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative"> 
+      </label>
+      <label class="checkbox-inline">
+          Licence <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative"> 
+      </label>
+      <label class="checkbox-inline">
+          Master <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative"> 
+      </label>
+      <label class="checkbox-inline">
+          Doctorat <input type="checkbox" class="filled-in" [checked]="unchecked" style="opacity:100; position:relative"> 
+      </label>
+  </div>
+
+  <hr style="color:blueviolet">
+</div>
+<!--Affichage de la requete entree par le user-->
+<div class="container">
+
+  <div *ngFor="let data of data | filterPipe: searchToken" class="col l12 m12 s12">  
+
+    <div class="card horizontal" formBorderCard >
+
+      <div class="card-image">
+        <img src="../../assets/Lafa.jpg" alt="lafayette logo" height="100% !important">
+      </div>
+
+      <div class="card-stacked">
+
+      <div class="card-content">
+
+        <p>{{ data.name | uppercase }}, {{ data.type | uppercase }}</p>
+        <p><small>{{ data.niveau | uppercase }}</small></p>
+        <span><small>Longitude : {{ data.longitude }}, Latitude : {{ data.latitude }}</small></span>
+
+      </div>
+
+      </div>
+
+    </div>
+  
+  </div>
+</div>
+<!--Affichage des formations dans la base de donnees-->
+<div class='container'>
+    <hr>
+</div>
+<br>
+<h2>Formations disponibles dans la base</h2>
+<div class='container'>
+  <div class="row">
+    <div *ngFor='let data of data' class="col l12 s12 m12">
+      <div class="card horizontal" formBorderCard>
+        <div class="card-image">
+          <img src="../../assets/Lafa.jpg" alt="lafayette logo" height="100% !important">
+        </div>
+        <div class="card-stacked">
+        <div class="card-content">
+          <p>{{ data.name | uppercase }}, {{ data.type | uppercase }}</p>
+          <p><small>{{ data.niveau | uppercase }}</small></p>
+          <span><small>Longitude : {{ data.longitude }}, Latitude : {{ data.latitude }}</small></span>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

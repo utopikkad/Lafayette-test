@@ -1,0 +1,66 @@
+[
+  {
+    "id": "f1",
+    "name": "Économie des organisations",
+    "type": "master",
+    "niveau": "bac+4",
+    "longitude": 2.279406,
+    "latitude": 48.847312
+  },
+  {
+    "id": "f2",
+    "name": "Économie appliquée",
+    "type": "master",
+    "niveau": "bac+4",
+    "longitude": 2.310455,
+    "latitude": 48.831972
+  },
+  {
+    "id": "f3",
+    "name": "Licence Musicologie",
+    "type": "licence",
+    "niveau": "bac+3",
+    "longitude": 2.378215,
+    "latitude": 48.852204
+  },
+  {
+    "id": "f4",
+    "name": "Licence Sciences de l'éducation",
+    "type": "licence",
+    "niveau": "bac+3",
+    "longitude": 2.360994,
+    "latitude": 48.835981
+  },
+  {
+    "id": "f5",
+    "name": "Construction des carrosseries",
+    "type": "Bac",
+    "niveau": "bac",
+    "longitude": 2.394272,
+    "latitude": 48.87093
+  },
+  {
+    "id": "f6",
+    "name": "Master Epitech",
+    "type": "master",
+    "niveau": "Bac+5",
+    "longitude": 2.3735736,
+    "latitude": 48.8662436
+  },
+  {
+    "id": "f7",
+    "name": "Master Isart digital - game design",
+    "type": "master",
+    "niveau": "Bac+4",
+    "longitude": 2.3688579,
+    "latitude": 48.852987
+  },
+  {
+    "id": "f8",
+    "name": "Deug MIAS - Paris VIII",
+    "type": "DEUG",
+    "niveau": "Bac+2",
+    "longitude": 2.3548078,
+    "latitude": 48.84599
+  }
+]
