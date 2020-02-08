@@ -1,6 +1,6 @@
 # LafayetteTest
 
-[![DepShield Badge](https://depshield.sonatype.org/badges/utopikkad/Lafayette-test/depshield.svg)](https://depshield.github.io)
+[![Depfu](https://badges.depfu.com/badges/713e66b1b03f977963943e46e99298f8/overview.svg)](https://depfu.com/github/utopikkad/Lafayette-test?project_id=10786)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
